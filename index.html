@@ -2,189 +2,261 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratik Mistry</title>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#FFF">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pratik Mistry</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="pratixmistry.github.io/pratixmistry/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="pratixmistry.github.io/pratixmistry/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="pratixmistry.github.io/pratixmistry/favicon-16x16.png">
-    <link rel="manifest" href="pratixmistry.github.io/pratixmistry/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* root */
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            background-color: #f1f1f1;
-        }
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180"
+		href="https://github.com/pratixmistry/pratixmistry.github.io/blob/main/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32"
+		href="https://github.com/pratixmistry/pratixmistry.github.io/blob/main/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16"
+		href="https://github.com/pratixmistry/pratixmistry.github.io/blob/main/favicon-16x16.png">
+	<link rel="manifest" href="https://github.com/pratixmistry/pratixmistry.github.io/blob/main/site.webmanifest">
 
-        a {
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 700;
-            font-size: 1rem;
-            line-height: 1;
-            color: #000;
-            text-decoration: none;
-            font-size: 1.125rem;
-            line-height: 1.75rem;
-        }
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
-        p {
-            margin: 0;
-            font-size: 1.125rem;
-            line-height: 1.7777778;
-        }
+	<!-- CSS -->
+	<style>
+		*,
+		*:after,
+		*:before {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
 
-        /* class */
-        .x {
-            max-width: 50rem;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+		html {
+			-webkit-text-size-adjust: none;
+			/* Prevent font scaling in landscape */
+			width: 100%;
+			height: 100%;
+			-webkit-font-smoothing: antialiased;
+			-moz-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
 
-        .a {
-            display: flex;
-            justify-content: space-between;
-        }
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Space Grotesk', sans-serif;
+			-webkit-font-smoothing: antialiased;
+			font-weight: 400;
+			width: 100%;
+			min-height: 100%;
+			color: #000;
+			background-color: #f1f1f1;
+		}
 
-        .ab {
-            display: flex;
-            gap: 1rem;
-        }
+		a {
+			outline: none;
+			text-decoration: none;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 1;
+			color: #000;
+			text-decoration: none;
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+		}
 
-        .ab a {
-            font-weight: 400;
-        }
+		a:hover,
+		a:focus {
+			outline: none;
+			text-decoration: none;
+			color: #570987;
+		}
 
-        .b {
-            padding: 5rem 0;
-        }
+		ul,
+		ol {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
 
-        .c ul {
-            display: block;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            padding-inline-start: 0px;
-            display: flex;
-            flex-direction: column;
-            gap: 0.3rem;
-        }
+		p {
+			margin: 0;
+			font-size: 1.125rem;
+			line-height: 1.7777778;
+			font-weight: 500;
+		}
 
-        .c ul li {
-            display: flex;
-            gap: 0.7rem;
-            align-items: baseline;
-        }
+		.container {
+			max-width: 50rem;
+			margin: 0 auto;
+			padding: 0 1rem;
+		}
 
-        .c ul li span {
-            width: 2rem;
-        }
+		.intro {
+			font-weight: 700;
+			font-size: 3rem;
+			line-height: 1;
+			text-decoration: none;
+			text-transform: capitalize;
+			border: 3px solid;
+			border-radius: 1rem;
+			padding: 0.5em;
+			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+			position: relative;
+		}
 
-        .c ul li p {
-            width: calc(100% - 2rem);
-        }
+		header,
+		footer {
+			padding: 1rem 0;
+		}
 
+		.header-wrap,
+		.footer-wrap {
+			height: 60px;
+		}
 
-        /* btn */
-        .btn-a {
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 700;
-            font-size: 3rem;
-            line-height: 1;
-            text-decoration: none;
-            text-transform: capitalize;
-            color: #000;
-            border: 3px solid;
-            border-radius: 1rem;
-            padding: 0.5em;
-            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-            position: relative;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-        }
+		.about-me-wrap {
+			min-height: calc(100vh - 120px);
+			padding: 3rem 0;
+		}
 
-        /* media */
-        @media (max-width: 767px) {
-            .x {
-                padding: 1rem;
-            }
+		.flex-between {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 
-            .btn-a {
-                font-size: 2rem;
-            }
+		.flex-col {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 3rem;
+		}
 
-            .b {
-                padding: 3rem 0;
-            }
+		.about-me-wrap ul {
+			display: flex;
+			flex-direction: column;
+			gap: 0.3rem;
+		}
 
-            a,
-            p {
-                font-size: 1rem;
-                line-height: 1.4;
-            }
+		.about-me-wrap ul li {
+			display: flex;
+			gap: 0.7rem;
+			align-items: baseline;
+		}
 
-            .c ul {
-                gap: 1rem;
-            }
+		.links {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+		}
 
-            .c ul li {
-                gap: 0;
-            }
-        }
-    </style>
+		@media (max-width: 767px) {
+			.about-me-wrap {
+				padding: 1.5rem 0;
+			}
+
+			.intro {
+				font-size: 2rem;
+			}
+
+			a,
+			p {
+				font-size: 1rem;
+				line-height: 1.4;
+			}
+
+			.about-me-wrap ul {
+				gap: 1rem;
+			}
+		}
+	</style>
 </head>
 
 <body>
-    <!-- HTML !-->
-    <div class="x">
-        <div class="a">
-            <div class="aa">
-                <a href="https://github.com/pratixmistry" target="_blank">@pratixmistry</a>
-            </div>
-            <div class="ab">
-                <!-- <a href="">blog</a> -->
-                <!-- <a href="">project</a> -->
-            </div>
-        </div>
-        <div class="b">
-            <button class="btn-a" role="button">👋 Hi, I'm Pratik!</button>
-        </div>
-        <div class="c">
-            <ul>
-                <li>
-                    <span>🕸️</span>
-                    <p>Your Friendly, Neighborhood Web Developer.</p>
-                </li>
-                <li>
-                    <span>💻</span>
-                    <p>
-                        Exploring the endless possibilities of CSS, JavaScript, and beyond!
-                    </p>
-                </li>
-                <li><span>🌱</span>
-                    <p>Constantly diving into the world of front-end technologies. One line of code at a time!</p>
-                </li>
-                <li><span>💡</span>
-                    <p>Eager to learn, experiment, and create stunning user interfaces that leave a lasting impression.
-                    </p>
-                </li>
-                <li><span>🚀</span>
-                    <p>On a journey to master the art of web development, fueled by curiosity and determination.</p>
-                </li>
-                <li><span>⚡</span>
-                    <p>Fun fact: I enjoy traveling, playing counter-strike poorly, and watching f1 and anime.</p>
-                </li>
-                <li><span>🎧</span>
-                    <p>Always wired in: finding the perfect harmony between lines of code and the beats that keep me
-                        motivated.</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+
+	<div class="header-wrap">
+		<header>
+			<div class="container">
+				<div class="flex-between">
+					<div class="handle">
+						<a href="https://github.com/pratixmistry" target="_blank">@pratixmistry</a>
+					</div>
+					<div class="links">
+						<a href="#">projects</a>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<div class="about-me-wrap">
+		<div class="container">
+			<div class="flex-col">
+				<div class="intro">
+					👋 Hi, I'm Pratik!
+				</div>
+				<ul>
+					<li>
+						<span>⏳</span>
+						<p>One line of code at a time!</p>
+					</li>
+					<li>
+						<span>🕸️</span>
+						<p>Your Friendly, Neighborhood Web Developer.</p>
+					</li>
+					<li>
+						<span>💻</span>
+						<p>
+							Exploring the endless possibilities of CSS, JavaScript, and beyond!
+						</p>
+					</li>
+					<li>
+						<span>🌱</span>
+						<!-- <p>Constantly diving into the world of front-end technologies. One line of code at a time!</p> -->
+						<p>Constantly learning and experimenting to create seamless, stunning interfaces.</p>
+					</li>
+					<!-- <li>
+						<span>💡</span>
+						<p>Eager to learn, experiment, and create stunning user interfaces that leave a lasting
+							impression.
+						</p>
+					</li> -->
+					<li>
+						<span>🚀</span>
+						<p>On a journey to master the art of web development, fueled by curiosity and determination.</p>
+					</li>
+					<li>
+						<span>⚡</span>
+						<p>Fun fact: I enjoy traveling, watching f1 and anime, and playing Counter-Strike poorly.</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer-wrap">
+		<footer>
+			<div class="container">
+				<div class="flex-between">
+					<div class="copyright">
+						<div class="">Pratik Mistry © <span id="year"></span></div>
+					</div>
+					<div class="links">
+						<a href="#">LinkedIn</a>
+						<a href="#">GitHub</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
 </body>
+
+<script>
+	document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </html>
