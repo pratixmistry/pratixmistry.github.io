@@ -7,12 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pratik Mistry</title>
 
-	<!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-	
-	<!-- CSS -->
+
 	<style>
 		*,
 		*:after,
@@ -22,26 +20,32 @@
 			padding: 0;
 		}
 
-		html {
-			-webkit-text-size-adjust: none;
-			/* Prevent font scaling in landscape */
+		html,
+		body {
 			width: 100%;
 			height: 100%;
+			margin: 0;
+			padding: 0;
 			-webkit-font-smoothing: antialiased;
 			-moz-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
-		}
-
-		body {
-			margin: 0;
-			padding: 0;
 			font-family: 'Space Grotesk', sans-serif;
-			-webkit-font-smoothing: antialiased;
 			font-weight: 400;
-			width: 100%;
-			min-height: 100%;
 			color: #000;
 			background-color: #f1f1f1;
+		}
+
+		.fullscreen-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			width: 100%;
+			height: 100vh;
+		}
+
+		.container {
+			padding: 0 16px;
 		}
 
 		a {
@@ -49,118 +53,20 @@
 			text-decoration: none;
 			font-family: 'Space Grotesk', sans-serif;
 			font-weight: 700;
-			font-size: 1rem;
-			line-height: 1;
+			font-size: 1.5rem;
+			line-height: 1.5;
 			color: #000;
-			text-decoration: none;
-			font-size: 1.125rem;
-			line-height: 1.75rem;
+			transition: all 0.3s ease;
 		}
 
 		a:hover,
 		a:focus {
-			outline: none;
-			text-decoration: none;
 			color: #570987;
 		}
 
-		ul,
-		ol {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
-
-		p {
-			margin: 0;
-			font-size: 1.125rem;
-			line-height: 1.7777778;
-			font-weight: 500;
-		}
-
-		.container {
-			max-width: 50rem;
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-
-		.intro {
-			font-weight: 700;
-			font-size: 3rem;
-			line-height: 1;
-			text-decoration: none;
-			text-transform: capitalize;
-			border: 3px solid;
-			border-radius: 1rem;
-			padding: 0.5em;
-			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-			position: relative;
-		}
-
-		header,
-		footer {
-			padding: 1rem 0;
-		}
-
-		.header-wrap,
-		.footer-wrap {
-			height: 60px;
-		}
-
-		.about-me-wrap {
-			min-height: calc(100dvh - 120px);
-			height: 100%;
-			padding: 3rem 0;
-		}
-
-		.flex-between {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-
-		.flex-col {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			gap: 3rem;
-		}
-
-		.about-me-wrap ul {
-			display: flex;
-			flex-direction: column;
-			gap: 0.3rem;
-		}
-
-		.about-me-wrap ul li {
-			display: flex;
-			gap: 0.7rem;
-			align-items: baseline;
-		}
-
-		.links {
-			display: flex;
-			align-items: center;
-			gap: 0.5rem;
-		}
-
 		@media (max-width: 767px) {
-			.about-me-wrap {
-				padding: 1.5rem 0;
-			}
-
-			.intro {
-				font-size: 2rem;
-			}
-
-			a,
-			p {
-				font-size: 1rem;
-				line-height: 1.4;
-			}
-
-			.about-me-wrap ul {
-				gap: 1rem;
+			a {
+				font-size: 1.25rem;
 			}
 		}
 	</style>
@@ -168,74 +74,12 @@
 
 <body>
 
-	<div class="header-wrap">
-		<header>
-			<div class="container">
-				<div class="flex-between">
-					<div class="handle">
-						<a href="https://pratixmistry.github.io/" target="_blank">@pratixmistry</a>
-					</div>
-					<div class="links">
-						<a href="https://github.com/pratixmistry" target="_blank">projects</a>
-					</div>
-				</div>
-			</div>
-		</header>
-	</div>
-
-	<div class="about-me-wrap">
+	<div class="fullscreen-container">
 		<div class="container">
-			<div class="flex-col">
-				<div class="intro">
-					👋 Hi, I'm Pratik!
-				</div>
-				<ul>
-					<li>
-						<span>🕸️</span>
-						<p>Your Friendly, Neighborhood Web Developer.</p>
-					</li>
-					<li>
-						<span>💻</span>
-						<p>Exploring the endless possibilities of CSS, JavaScript, and beyond!</p>
-					</li>
-					<li>
-						<span>🌱</span>
-						<p>Constantly learning and experimenting to create seamless, stunning interfaces.</p>
-					</li>
-					<li>
-						<span>🚀</span>
-						<p>On a journey to master web development, fueled by curiosity and determination.</p>
-					</li>
-					<li>
-						<span>⚡</span>
-						<p>Fun fact: I enjoy traveling, watching f1 and anime, and playing Counter-Strike poorly.</p>
-					</li>
-				</ul>
-			</div>
-
+			<a href="https://pratixmistry.webflow.io/">Click here to redirect to my new site</a>
 		</div>
 	</div>
 
-	<div class="footer-wrap">
-		<footer>
-			<div class="container">
-				<div class="flex-between">
-					<div class="copyright">
-						<div class="">Pratik Mistry © <span id="year"></span></div>
-					</div>
-					<div class="links">
-						<a href="https://www.linkedin.com/in/pratixmistry/" target="_blank">LinkedIn</a>
-						<a href="https://github.com/pratixmistry" target="_blank">GitHub</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-
 </body>
-
-<script>
-	document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 </html>
